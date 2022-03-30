@@ -27,6 +27,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -38,6 +39,13 @@
                     android:layout_height="match_parent"
                     android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/titleName"
+                    android:textSize="24sp" />
             </androidx.appcompat.widget.Toolbar>
 
             <fragment
@@ -47,6 +55,7 @@
                 android:layout_height="match_parent"
                 app:defaultNavHost="true"
                 app:navGraph="@navigation/nav_graph" />
+
         </LinearLayout>
 
         <com.google.android.material.navigation.NavigationView
