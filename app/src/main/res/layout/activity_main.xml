@@ -40,13 +40,15 @@
                     android:contentDescription="@string/app_name"
                     app:srcCompat="@drawable/logo" />
 
-                <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/titleName"
-                    android:textSize="24sp" />
             </androidx.appcompat.widget.Toolbar>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:text="@string/titleName"
+                android:textSize="24sp" />
 
             <fragment
                 android:id="@+id/nav_host_fragment"

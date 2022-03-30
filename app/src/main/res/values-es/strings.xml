@@ -22,7 +22,7 @@
     <string name="application_submitted">Tienes tu solicitud de solicitud !! Oh bueno, en realidad no. Este es un
         formulario de prueba sólo para fines educativos. Si realmente desea enviar su solicitud, visite el sitio web!
     </string>
-    <string name="gdg_search">Búsqueda GDG</string>
+    <string name="gdg_search">Búsqueda GDG Tien Dao</string>
     <string name="gdg_apply">Aplicar para ejecutar GDG</string>
     <string name="gdgs_are">Los GDG son…</string>
     <string name="gdg_description_long">Los GDG son grupos locales de desarrolladores que están específicamente
@@ -40,7 +40,7 @@
         emulador, abra la aplicación Mapas para habilitar los servicios de ubicación.
     </string>
     <string name="hello_blank_fragment">Hola fragmento en blanco</string>
-    <string name="app_name">GDG</string>
+    <string name="app_name">GDG Tien Dao</string>
     <string name="stage_image_description">Foto desde el escenario de un devfest.</string>
     <string name="submit_button_description">Botón para enviar formulario</string>
     <string name="form_name_description">introduzca su nombre</string>
