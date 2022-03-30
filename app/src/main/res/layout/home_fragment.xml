@@ -19,7 +19,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
+        <variable
+            name="viewModel"
+            type="com.example.android.gdgfinder.home.HomeViewModel"/>
     </data>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
