@@ -3,6 +3,7 @@ package tdao.example.basicscodelab
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
@@ -19,29 +20,33 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             BasicsCodelabTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background
-                ) {
-                    Greeting("Tien Dao")
-                }
+                MyApp()
             }
         }
     }
 }
 
 @Composable
-private fun Greeting(name: String) {
-    Surface(color = MaterialTheme.colors.primary) {
-        Text(text = "Hello $name!", modifier = Modifier.padding(24.dp))
+private fun MyApp() {
+    Surface(color = MaterialTheme.colors.background) {
+        Greeting("Tien")
     }
 }
 
-@Preview(showBackground = true, name = "Text preview")
 @Composable
-fun DefaultPreview() {
+private fun Greeting(name: String) {
+    Surface(color = MaterialTheme.colors.primary) {
+        Column(modifier = Modifier.padding(24.dp)) {
+            Text(text = "Hello,")
+            Text(text = name)
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+private fun DefaultPreview() {
     BasicsCodelabTheme {
-        Greeting("Tien")
+        MyApp()
     }
 }
